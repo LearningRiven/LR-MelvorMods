@@ -1,0 +1,24 @@
+{
+  "manifest_version": 2,
+  "name": "Learning Riven Melvor Mods",
+  "version": "0.0.1",
+  "description": "Just a collection of melvor mods either made or copied",
+  "content_scripts": [
+    {
+      "matches": [
+        "*://melvoridle.com/*",
+        "*://www.melvoridle.com/*",
+        "*://test.melvoridle.com/*"
+      ],
+      "js": [
+        "src/scripts/main.js"
+      ],
+      "css": [
+        "src/styles/main.css"
+      ]
+    }
+  ],
+  "web_accessible_resources": [
+    "src/*.js"
+  ]
+}
